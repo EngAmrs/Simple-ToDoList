@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    font-family: Comic Sans MS, Comic Sans, cursive
+}
+
+body{
+    margin: 0;
+    padding: 10px;
+   height: 70vh;   
+}
+
+header{
+    padding: 10px;
+    height: 40vh;
+}
+header .container{
+    position: relative;
+    height: 100%;
+    background-image: url(/Images/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .container h1{
+    position:absolute;
+    bottom: 10%;
+    left: 5%;
+    font-weight: bolder;
+    font-size: 2.2em;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    
+}
+
+label{
+    
+
+    
+}
+main #list{
+    overflow: hidden;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 25px;
+    flex: 1 0 auto;
+    text-align: left;
+    
+}
+
+main #list ul{
+    overflow: hidden;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-style: italic;
+
+}
+main #list .checked li label{
+    text-decoration: line-through #999;
+}
+
+main #list li{
+    list-style: none;
+    margin-top: 10px;
+    color: #999;
+}
+
+
+li{
+
+    transition: 0.3s;
+  }
+  li:hover .custom-checkbox + label::before {
+    border-color: #FBBE7F;
+  }
+  li:hover label {
+    color: #FBBE7F;
+  }
+  li .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  li .custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  li .custom-checkbox + label::before {
+    transition: 0.3s;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  li .custom-checkbox:checked + label::before {
+    border-color: #AFD6E9;
+    background-color: #AFD6E9;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M10%202L4.5%208L2%205.27273%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  }
+
+
+main #input{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 8vh;
+}
+main #input input{
+
+    flex-basis: 40%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #999;
+    outline: none;
+    outline: none;
+    margin-left: 10px;
+}
+main #input i{
+    height: 4vh;
+    font-size: 2.5rem;
+    color: #FEB86F;
+    cursor: pointer;
+    
+}
+
+main #list li span{
+    cursor: pointer;
+    color:rgba(178, 34, 34, .7);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 4em;
+}
+
