@@ -16,7 +16,7 @@ header{
 header .container{
     position: relative;
     height: 100%;
-    background-image: url(/Images/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+    background-image: url(./Images/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
